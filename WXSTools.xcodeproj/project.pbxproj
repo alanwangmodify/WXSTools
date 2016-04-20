@@ -15,6 +15,7 @@
 		924FE0D91CB4DF5700E30020 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 924FE0D71CB4DF5700E30020 /* LaunchScreen.storyboard */; };
 		924FE0E41CB4DF5700E30020 /* WXSToolsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 924FE0E31CB4DF5700E30020 /* WXSToolsTests.m */; };
 		924FE0EF1CB4DF5700E30020 /* WXSToolsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 924FE0EE1CB4DF5700E30020 /* WXSToolsUITests.m */; };
+		92FA4E4C1CC77CC80034A0AB /* WXSModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 92FA4E4B1CC77CC80034A0AB /* WXSModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		924FE0EA1CB4DF5700E30020 /* WXSToolsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WXSToolsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		924FE0EE1CB4DF5700E30020 /* WXSToolsUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WXSToolsUITests.m; sourceTree = "<group>"; };
 		924FE0F01CB4DF5700E30020 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		92FA4E4A1CC77CC80034A0AB /* WXSModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXSModel.h; sourceTree = "<group>"; };
+		92FA4E4B1CC77CC80034A0AB /* WXSModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXSModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +108,8 @@
 				924FE0CD1CB4DF5700E30020 /* AppDelegate.m */,
 				924FE0CF1CB4DF5700E30020 /* ViewController.h */,
 				924FE0D01CB4DF5700E30020 /* ViewController.m */,
+				92FA4E4A1CC77CC80034A0AB /* WXSModel.h */,
+				92FA4E4B1CC77CC80034A0AB /* WXSModel.m */,
 				924FE0D21CB4DF5700E30020 /* Main.storyboard */,
 				924FE0D51CB4DF5700E30020 /* Assets.xcassets */,
 				924FE0D71CB4DF5700E30020 /* LaunchScreen.storyboard */,
@@ -270,6 +275,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92FA4E4C1CC77CC80034A0AB /* WXSModel.m in Sources */,
 				924FE0D11CB4DF5700E30020 /* ViewController.m in Sources */,
 				924FE0CE1CB4DF5700E30020 /* AppDelegate.m in Sources */,
 				924FE0CB1CB4DF5700E30020 /* main.m in Sources */,
@@ -502,6 +508,7 @@
 				924FE0F51CB4DF5700E30020 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		924FE0F61CB4DF5700E30020 /* Build configuration list for PBXNativeTarget "WXSToolsTests" */ = {
 			isa = XCConfigurationList;
@@ -510,6 +517,7 @@
 				924FE0F81CB4DF5700E30020 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		924FE0F91CB4DF5700E30020 /* Build configuration list for PBXNativeTarget "WXSToolsUITests" */ = {
 			isa = XCConfigurationList;
@@ -518,6 +526,7 @@
 				924FE0FB1CB4DF5700E30020 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
