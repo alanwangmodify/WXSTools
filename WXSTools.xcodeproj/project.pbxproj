@@ -16,6 +16,7 @@
 		924FE0E41CB4DF5700E30020 /* WXSToolsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 924FE0E31CB4DF5700E30020 /* WXSToolsTests.m */; };
 		924FE0EF1CB4DF5700E30020 /* WXSToolsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 924FE0EE1CB4DF5700E30020 /* WXSToolsUITests.m */; };
 		92FA4E4C1CC77CC80034A0AB /* WXSModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 92FA4E4B1CC77CC80034A0AB /* WXSModel.m */; };
+		92FA4E4F1CC780270034A0AB /* UINavigationController+WXSBack.m in Sources */ = {isa = PBXBuildFile; fileRef = 92FA4E4E1CC780270034A0AB /* UINavigationController+WXSBack.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,8 @@
 		924FE0F01CB4DF5700E30020 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		92FA4E4A1CC77CC80034A0AB /* WXSModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXSModel.h; sourceTree = "<group>"; };
 		92FA4E4B1CC77CC80034A0AB /* WXSModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXSModel.m; sourceTree = "<group>"; };
+		92FA4E4D1CC780270034A0AB /* UINavigationController+WXSBack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+WXSBack.h"; sourceTree = "<group>"; };
+		92FA4E4E1CC780270034A0AB /* UINavigationController+WXSBack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+WXSBack.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +113,8 @@
 				924FE0D01CB4DF5700E30020 /* ViewController.m */,
 				92FA4E4A1CC77CC80034A0AB /* WXSModel.h */,
 				92FA4E4B1CC77CC80034A0AB /* WXSModel.m */,
+				92FA4E4D1CC780270034A0AB /* UINavigationController+WXSBack.h */,
+				92FA4E4E1CC780270034A0AB /* UINavigationController+WXSBack.m */,
 				924FE0D21CB4DF5700E30020 /* Main.storyboard */,
 				924FE0D51CB4DF5700E30020 /* Assets.xcassets */,
 				924FE0D71CB4DF5700E30020 /* LaunchScreen.storyboard */,
@@ -279,6 +284,7 @@
 				924FE0D11CB4DF5700E30020 /* ViewController.m in Sources */,
 				924FE0CE1CB4DF5700E30020 /* AppDelegate.m in Sources */,
 				924FE0CB1CB4DF5700E30020 /* main.m in Sources */,
+				92FA4E4F1CC780270034A0AB /* UINavigationController+WXSBack.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
