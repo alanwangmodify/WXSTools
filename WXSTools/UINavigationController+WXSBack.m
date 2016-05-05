@@ -7,16 +7,23 @@
 //
 
 #import "UINavigationController+WXSBack.h"
-
+static  NSString *backBlockKey = @"backBlockKey";
 @interface UINavigationController ()
 
 @end
 
 @implementation UINavigationController (WXSBack)
+
 -(BOOL)navigationBar:(UINavigationBar *)navigationBar shouldPopItem:(UINavigationItem *)item {
-    return YES;
+    return self.backBlock();
+    
 }
 -(void)setBackBlock:(WXSBackBlock)backBlock {
+    objc_setAssociatedObject(self, &backBlockKey, backBlock, OBJC_ASSOCIATION_COPY_NONATOMIC);
+}
+-(WXSBackBlock)backBlock{
+    
+    return objc_getAssociatedObject(self,&backBlockKey);
     
 }
 @end

@@ -14,7 +14,7 @@ typedef NS_ENUM(NSInteger,WXSBackType){
     WXSBackTypeShouldBack,
     WXSBackTypeDidBack,
 };
-typedef void(^WXSBackBlock)(WXSBackType);
+typedef BOOL (^WXSBackBlock)();
 @interface UINavigationController (WXSBack)<UIGestureRecognizerDelegate,UINavigationBarDelegate>
 
 @property (nonatomic,copy) WXSBackBlock backBlock;
