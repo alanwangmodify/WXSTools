@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		920DFE721CE1753B00A2ED62 /* NSArray+WXS.m in Sources */ = {isa = PBXBuildFile; fileRef = 920DFE711CE1753B00A2ED62 /* NSArray+WXS.m */; };
 		920DFE751CE17D1A00A2ED62 /* NSArray+Hook.m in Sources */ = {isa = PBXBuildFile; fileRef = 920DFE741CE17D1A00A2ED62 /* NSArray+Hook.m */; };
 		924FE0CB1CB4DF5700E30020 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 924FE0CA1CB4DF5700E30020 /* main.m */; };
 		924FE0CE1CB4DF5700E30020 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 924FE0CD1CB4DF5700E30020 /* AppDelegate.m */; };
@@ -39,8 +38,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		920DFE701CE1753B00A2ED62 /* NSArray+WXS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+WXS.h"; sourceTree = "<group>"; };
-		920DFE711CE1753B00A2ED62 /* NSArray+WXS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+WXS.m"; sourceTree = "<group>"; };
 		920DFE731CE17D1A00A2ED62 /* NSArray+Hook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Hook.h"; sourceTree = "<group>"; };
 		920DFE741CE17D1A00A2ED62 /* NSArray+Hook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Hook.m"; sourceTree = "<group>"; };
 		924FE0C61CB4DF5700E30020 /* WXSTools.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WXSTools.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -119,8 +116,6 @@
 				924FE0D01CB4DF5700E30020 /* ViewController.m */,
 				92FA4E4A1CC77CC80034A0AB /* WXSModel.h */,
 				92FA4E4B1CC77CC80034A0AB /* WXSModel.m */,
-				920DFE701CE1753B00A2ED62 /* NSArray+WXS.h */,
-				920DFE711CE1753B00A2ED62 /* NSArray+WXS.m */,
 				920DFE731CE17D1A00A2ED62 /* NSArray+Hook.h */,
 				920DFE741CE17D1A00A2ED62 /* NSArray+Hook.m */,
 				92FA4E4D1CC780270034A0AB /* UINavigationController+WXSBack.h */,
@@ -294,7 +289,6 @@
 				924FE0D11CB4DF5700E30020 /* ViewController.m in Sources */,
 				920DFE751CE17D1A00A2ED62 /* NSArray+Hook.m in Sources */,
 				924FE0CE1CB4DF5700E30020 /* AppDelegate.m in Sources */,
-				920DFE721CE1753B00A2ED62 /* NSArray+WXS.m in Sources */,
 				924FE0CB1CB4DF5700E30020 /* main.m in Sources */,
 				92FA4E4F1CC780270034A0AB /* UINavigationController+WXSBack.m in Sources */,
 			);

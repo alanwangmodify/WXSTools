@@ -12,26 +12,29 @@
 +(void)load{
     static dispatch_once_t onceToken ;
     dispatch_once(&onceToken, ^{
-        
-        Method m1 = class_getInstanceMethod([self class], @selector(objectAtIndex:));
-        Method m2 = class_getInstanceMethod([self class], @selector(My_objectAtIndex:));
-        
-        BOOL isAdd = class_addMethod([self class], @selector(objectAtIndex:), method_getImplementation(m2), method_getTypeEncoding(m2));
-        if (isAdd == YES) {
+        @autoreleasepool {
+         
+            Method m1 = class_getInstanceMethod(NSClassFromString(@"__NSArrayM"), @selector(objectAtIndex:));
+            Method m2 = class_getInstanceMethod(NSClassFromString(@"__NSArrayM"), @selector(My_objectAtIndex:));
             
-            class_replaceMethod([self class], @selector(My_objectAtIndex:), method_getImplementation(m1), method_getTypeEncoding(m1));
-            
-        }else{
-            method_exchangeImplementations(m1, m2);
+            BOOL isAdd = class_addMethod([self class], @selector(objectAtIndex:), method_getImplementation(m2), method_getTypeEncoding(m2));
+            if (isAdd == YES) {
+                
+                class_replaceMethod([self class], @selector(My_objectAtIndex:), method_getImplementation(m1), method_getTypeEncoding(m1));
+                
+            }else{
+                method_exchangeImplementations(m1, m2);
+            }
+
         }
-        
         
     });
     
     
 }
+
 -(id)My_objectAtIndex:(NSUInteger)index{
-    NSLog(@"exchangeSuccess");
+    
     if (self.count <= index) {
         
 #if DEBUG
@@ -39,6 +42,8 @@
 #endif
         return nil;
     }
+    
+    NSLog(@"exchange");
     return [self My_objectAtIndex:index];
 }
 

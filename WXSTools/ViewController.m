@@ -7,7 +7,6 @@
 //
 
 #import "ViewController.h"
-#import "NSArray+WXS.h"
 @interface ViewController ()
 @property (nonatomic,strong) UITableView *tableView;
 
@@ -52,7 +51,9 @@
     switch (indexPath.row) {
         case 0:{
             NSArray *array = @[@"12",@"2",@"3"];
-            NSLog(@"%@",[array objectAtIndex:1]);
+            
+            NSLog(@"%@",[array objectAtIndex:3]);
+            
         }
             break;
             
