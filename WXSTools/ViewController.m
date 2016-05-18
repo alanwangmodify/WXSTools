@@ -51,9 +51,7 @@
     switch (indexPath.row) {
         case 0:{
             NSArray *array = @[@"12",@"2",@"3"];
-            
-            NSLog(@"%@",[array objectAtIndex:3]);
-            
+            NSLog(@"%@，%@",[array objectAtIndex:3],array[4]);
         }
             break;
             

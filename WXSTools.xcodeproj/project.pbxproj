@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		920DFE751CE17D1A00A2ED62 /* NSArray+Hook.m in Sources */ = {isa = PBXBuildFile; fileRef = 920DFE741CE17D1A00A2ED62 /* NSArray+Hook.m */; };
+		920DFE751CE17D1A00A2ED62 /* NSArray+Hook.m in Sources */ = {isa = PBXBuildFile; fileRef = 920DFE741CE17D1A00A2ED62 /* NSArray+Hook.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		924FE0CB1CB4DF5700E30020 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 924FE0CA1CB4DF5700E30020 /* main.m */; };
 		924FE0CE1CB4DF5700E30020 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 924FE0CD1CB4DF5700E30020 /* AppDelegate.m */; };
 		924FE0D11CB4DF5700E30020 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 924FE0D01CB4DF5700E30020 /* ViewController.m */; };

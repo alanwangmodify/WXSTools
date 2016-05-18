@@ -14,8 +14,8 @@
     dispatch_once(&onceToken, ^{
         @autoreleasepool {
          
-            Method m1 = class_getInstanceMethod(NSClassFromString(@"__NSArrayM"), @selector(objectAtIndex:));
-            Method m2 = class_getInstanceMethod(NSClassFromString(@"__NSArrayM"), @selector(My_objectAtIndex:));
+            Method m1 = class_getInstanceMethod(NSClassFromString(@"__NSArrayI"), @selector(objectAtIndex:));
+            Method m2 = class_getInstanceMethod(NSClassFromString(@"__NSArrayI"), @selector(My_objectAtIndex:));
             
             BOOL isAdd = class_addMethod([self class], @selector(objectAtIndex:), method_getImplementation(m2), method_getTypeEncoding(m2));
             if (isAdd == YES) {
@@ -25,7 +25,7 @@
             }else{
                 method_exchangeImplementations(m1, m2);
             }
-
+            
         }
         
     });
@@ -43,7 +43,6 @@
         return nil;
     }
     
-    NSLog(@"exchange");
     return [self My_objectAtIndex:index];
 }
 
