@@ -22,17 +22,6 @@
 
 -(void)creatModelWithDic:(NSDictionary *)dict {
     
-//    for (NSString *key in dict) {
-//        
-//        SEL setterSel = [self creatSetterWithKey:key];
-//        id value = dict[key];
-//        
-//        if (setterSel != nil) {
-//            ((void (*)(id,SEL,id))objc_msgSend)(self,setterSel,value);
-//        }
-//    }
-    
-    
     unsigned int outCount = 0;
     objc_property_t *properties = class_copyPropertyList(self.class, &outCount);
     for (int i = 0; i < outCount; i++) {
@@ -101,21 +90,6 @@
         SEL getter = [self creatGetterWithKey:key];
         
         if (getter) {
-            
-            //有几种方式获得value
-            
-//            id value = [self performSelector:getter];
-
-//            id value = [self valueForKey:key];
-            
-            
-//            NSMethodSignature *signature = [self methodSignatureForSelector:getter];
-//            NSInvocation *invocation = [NSInvocation invocationWithMethodSignature:signature];
-//            [invocation setSelector:getter];
-//            [invocation invokeWithTarget:self];
-//            __unsafe_unretained NSObject *value = nil;
-//            [invocation getReturnValue:&value];
-            
             
             id value = ((id (*)(id,SEL))objc_msgSend)(self,getter);
             

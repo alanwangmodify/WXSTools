@@ -7,7 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		920DFE751CE17D1A00A2ED62 /* NSArray+Hook.m in Sources */ = {isa = PBXBuildFile; fileRef = 920DFE741CE17D1A00A2ED62 /* NSArray+Hook.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		921CAB721CF6E89F001F37B6 /* NSArray+Hook.m in Sources */ = {isa = PBXBuildFile; fileRef = 921CAB6B1CF6E89F001F37B6 /* NSArray+Hook.m */; };
+		921CAB731CF6E89F001F37B6 /* UINavigationController+WXSBack.m in Sources */ = {isa = PBXBuildFile; fileRef = 921CAB6D1CF6E89F001F37B6 /* UINavigationController+WXSBack.m */; };
+		921CAB741CF6E89F001F37B6 /* UIView+Touch.m in Sources */ = {isa = PBXBuildFile; fileRef = 921CAB6F1CF6E89F001F37B6 /* UIView+Touch.m */; };
+		921CAB751CF6E89F001F37B6 /* WXSModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 921CAB711CF6E89F001F37B6 /* WXSModel.m */; };
 		924FE0CB1CB4DF5700E30020 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 924FE0CA1CB4DF5700E30020 /* main.m */; };
 		924FE0CE1CB4DF5700E30020 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 924FE0CD1CB4DF5700E30020 /* AppDelegate.m */; };
 		924FE0D11CB4DF5700E30020 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 924FE0D01CB4DF5700E30020 /* ViewController.m */; };
@@ -16,8 +19,6 @@
 		924FE0D91CB4DF5700E30020 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 924FE0D71CB4DF5700E30020 /* LaunchScreen.storyboard */; };
 		924FE0E41CB4DF5700E30020 /* WXSToolsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 924FE0E31CB4DF5700E30020 /* WXSToolsTests.m */; };
 		924FE0EF1CB4DF5700E30020 /* WXSToolsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 924FE0EE1CB4DF5700E30020 /* WXSToolsUITests.m */; };
-		92FA4E4C1CC77CC80034A0AB /* WXSModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 92FA4E4B1CC77CC80034A0AB /* WXSModel.m */; };
-		92FA4E4F1CC780270034A0AB /* UINavigationController+WXSBack.m in Sources */ = {isa = PBXBuildFile; fileRef = 92FA4E4E1CC780270034A0AB /* UINavigationController+WXSBack.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,8 +39,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		920DFE731CE17D1A00A2ED62 /* NSArray+Hook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Hook.h"; sourceTree = "<group>"; };
-		920DFE741CE17D1A00A2ED62 /* NSArray+Hook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Hook.m"; sourceTree = "<group>"; };
+		921CAB6A1CF6E89F001F37B6 /* NSArray+Hook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Hook.h"; sourceTree = "<group>"; };
+		921CAB6B1CF6E89F001F37B6 /* NSArray+Hook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Hook.m"; sourceTree = "<group>"; };
+		921CAB6C1CF6E89F001F37B6 /* UINavigationController+WXSBack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+WXSBack.h"; sourceTree = "<group>"; };
+		921CAB6D1CF6E89F001F37B6 /* UINavigationController+WXSBack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+WXSBack.m"; sourceTree = "<group>"; };
+		921CAB6E1CF6E89F001F37B6 /* UIView+Touch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Touch.h"; sourceTree = "<group>"; };
+		921CAB6F1CF6E89F001F37B6 /* UIView+Touch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Touch.m"; sourceTree = "<group>"; };
+		921CAB701CF6E89F001F37B6 /* WXSModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXSModel.h; sourceTree = "<group>"; };
+		921CAB711CF6E89F001F37B6 /* WXSModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXSModel.m; sourceTree = "<group>"; };
 		924FE0C61CB4DF5700E30020 /* WXSTools.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WXSTools.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		924FE0CA1CB4DF5700E30020 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		924FE0CC1CB4DF5700E30020 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -56,10 +63,6 @@
 		924FE0EA1CB4DF5700E30020 /* WXSToolsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WXSToolsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		924FE0EE1CB4DF5700E30020 /* WXSToolsUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WXSToolsUITests.m; sourceTree = "<group>"; };
 		924FE0F01CB4DF5700E30020 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		92FA4E4A1CC77CC80034A0AB /* WXSModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXSModel.h; sourceTree = "<group>"; };
-		92FA4E4B1CC77CC80034A0AB /* WXSModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXSModel.m; sourceTree = "<group>"; };
-		92FA4E4D1CC780270034A0AB /* UINavigationController+WXSBack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+WXSBack.h"; sourceTree = "<group>"; };
-		92FA4E4E1CC780270034A0AB /* UINavigationController+WXSBack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+WXSBack.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +90,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		921CAB691CF6E89F001F37B6 /* WXSTools */ = {
+			isa = PBXGroup;
+			children = (
+				921CAB6A1CF6E89F001F37B6 /* NSArray+Hook.h */,
+				921CAB6B1CF6E89F001F37B6 /* NSArray+Hook.m */,
+				921CAB6C1CF6E89F001F37B6 /* UINavigationController+WXSBack.h */,
+				921CAB6D1CF6E89F001F37B6 /* UINavigationController+WXSBack.m */,
+				921CAB6E1CF6E89F001F37B6 /* UIView+Touch.h */,
+				921CAB6F1CF6E89F001F37B6 /* UIView+Touch.m */,
+				921CAB701CF6E89F001F37B6 /* WXSModel.h */,
+				921CAB711CF6E89F001F37B6 /* WXSModel.m */,
+			);
+			path = WXSTools;
+			sourceTree = "<group>";
+		};
 		924FE0BD1CB4DF5700E30020 = {
 			isa = PBXGroup;
 			children = (
@@ -114,12 +132,7 @@
 				924FE0CD1CB4DF5700E30020 /* AppDelegate.m */,
 				924FE0CF1CB4DF5700E30020 /* ViewController.h */,
 				924FE0D01CB4DF5700E30020 /* ViewController.m */,
-				92FA4E4A1CC77CC80034A0AB /* WXSModel.h */,
-				92FA4E4B1CC77CC80034A0AB /* WXSModel.m */,
-				920DFE731CE17D1A00A2ED62 /* NSArray+Hook.h */,
-				920DFE741CE17D1A00A2ED62 /* NSArray+Hook.m */,
-				92FA4E4D1CC780270034A0AB /* UINavigationController+WXSBack.h */,
-				92FA4E4E1CC780270034A0AB /* UINavigationController+WXSBack.m */,
+				921CAB691CF6E89F001F37B6 /* WXSTools */,
 				924FE0D21CB4DF5700E30020 /* Main.storyboard */,
 				924FE0D51CB4DF5700E30020 /* Assets.xcassets */,
 				924FE0D71CB4DF5700E30020 /* LaunchScreen.storyboard */,
@@ -285,12 +298,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				92FA4E4C1CC77CC80034A0AB /* WXSModel.m in Sources */,
+				921CAB731CF6E89F001F37B6 /* UINavigationController+WXSBack.m in Sources */,
 				924FE0D11CB4DF5700E30020 /* ViewController.m in Sources */,
-				920DFE751CE17D1A00A2ED62 /* NSArray+Hook.m in Sources */,
 				924FE0CE1CB4DF5700E30020 /* AppDelegate.m in Sources */,
+				921CAB721CF6E89F001F37B6 /* NSArray+Hook.m in Sources */,
 				924FE0CB1CB4DF5700E30020 /* main.m in Sources */,
-				92FA4E4F1CC780270034A0AB /* UINavigationController+WXSBack.m in Sources */,
+				921CAB741CF6E89F001F37B6 /* UIView+Touch.m in Sources */,
+				921CAB751CF6E89F001F37B6 /* WXSModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

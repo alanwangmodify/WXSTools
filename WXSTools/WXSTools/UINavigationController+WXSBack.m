@@ -16,8 +16,8 @@ static  NSString *backBlockKey = @"backBlockKey";
 
 -(BOOL)navigationBar:(UINavigationBar *)navigationBar shouldPopItem:(UINavigationItem *)item {
     return self.backBlock();
-    
 }
+
 -(void)setBackBlock:(WXSBackBlock)backBlock {
     objc_setAssociatedObject(self, &backBlockKey, backBlock, OBJC_ASSOCIATION_COPY_NONATOMIC);
 }
@@ -26,4 +26,6 @@ static  NSString *backBlockKey = @"backBlockKey";
     return objc_getAssociatedObject(self,&backBlockKey);
     
 }
+
+
 @end
